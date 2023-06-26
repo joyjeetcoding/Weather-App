@@ -48,7 +48,7 @@ function App() {
         />
       </div>
       <div className="container absolute top-0 right-0 left-0 bottom-0 max-w-3xl text-white min-h-screen p-8 flex flex-col justify-between mx-auto">
-        <div className="top mt-5">
+        <div className="top mt-12">
           <div className="location">
             <p className="text-4xl">{data.name}</p>
             <div className="temp">
@@ -65,7 +65,7 @@ function App() {
         </div>
 
         {data.name !== undefined && (
-          <div className="bottom text-3xl flex justify-evenly text-center w-full my-4 rounded-xl bg-slate-300 bg-opacity-[0.2] py-3">
+          <div className="bottom text-lg sm:text-xl flex justify-evenly text-center w-full my-4 rounded-xl bg-slate-300 bg-opacity-[0.2] py-3">
             <div className="feels">
               {data.main ? <p>{data.main.feels_like}°F</p> : null}
               <p>Feels Like</p>
